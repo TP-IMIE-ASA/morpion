@@ -1,0 +1,53 @@
+<HEAD><SCRIPT LANGUAGE="JavaScript">
+  function efface(){
+    for (n=0; n<=8; n++) {document.toto.elements[n].value='' }
+   }
+function jeuPerso(CaseDuClic){
+   if ( CaseDuClic.value=="" ) { CaseDuClic.value='X' }
+    jeuAuto()
+</SCRIPT></HEAD><BODY>
+<INPUT TYPE=button VALUE="Effacer" onClick="efface()">
+<INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 onFocus="jeuPerso(this)">
+
+<FORM NAME="toto">
+   <TABLE BORDER=0>
+   <TR>
+      <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+    <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+     <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+    </TR>
+    <TR>
+     <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+     <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+     <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+    </TR>
+    <TR >
+     <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+     <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+     <TD ALIGN=center>
+       <INPUT TYPE=text VALUE="X" SIZE=1 MAXLENGTH=1 >
+     </TD>
+    </TR>
+   <TR>
+     <TD ALIGN=center COLSPAN=3>
+        <INPUT TYPE=button VALUE="Effacer" >
+     </TD>
+</TR>
+</TABLE>
+</FORM></BODY></HTML>
